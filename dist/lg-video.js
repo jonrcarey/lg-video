@@ -1,4 +1,4 @@
-/*! lg-video - v1.3.0 - 2020-05-03
+/*! lg-video - v1.3.0 - 2020-08-05
 * http://sachinchoolur.github.io/lightGallery
 * Copyright (c) 2020 Sachin N; Licensed GPLv3 */
 
@@ -121,7 +121,7 @@
                     a = a + '&' + $.param(this.core.s.youtubePlayerParams);
                 }
 
-                video = '<iframe class="lg-video-object lg-youtube ' + addClass + '" ' + videoTitle + ' width="560" height="315" src="//www.youtube.com/embed/' + isVideo.youtube[1] + a + '" frameborder="0" allowfullscreen></iframe>';
+                video = '<iframe class="lg-video-object lg-youtube ' + addClass + '" ' + videoTitle + ' width="560" height="315" src="//www.youtube.com/embed/' + isVideo.youtube[1] + a + '" allowfullscreen></iframe>';
 
             } else if (isVideo.vimeo) {
 
@@ -130,7 +130,7 @@
                     a = a + '&' + $.param(this.core.s.vimeoPlayerParams);
                 }
 
-                video = '<iframe class="lg-video-object lg-vimeo ' + addClass + '" ' + videoTitle + ' width="560" height="315"  src="//player.vimeo.com/video/' + isVideo.vimeo[1] + a + '" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+                video = '<iframe class="lg-video-object lg-vimeo ' + addClass + '" ' + videoTitle + ' width="560" height="315"  src="//player.vimeo.com/video/' + isVideo.vimeo[1] + a + '" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 
             } else if (isVideo.dailymotion) {
 
@@ -139,7 +139,7 @@
                     a = a + '&' + $.param(this.core.s.dailymotionPlayerParams);
                 }
 
-                video = '<iframe class="lg-video-object lg-dailymotion ' + addClass + '" ' + videoTitle + ' width="560" height="315" src="//www.dailymotion.com/embed/video/' + isVideo.dailymotion[1] + a + '" frameborder="0" allowfullscreen></iframe>';
+                video = '<iframe class="lg-video-object lg-dailymotion ' + addClass + '" ' + videoTitle + ' width="560" height="315" src="//www.dailymotion.com/embed/video/' + isVideo.dailymotion[1] + a + '" allowfullscreen></iframe>';
 
             } else if (isVideo.html5) {
                 var fL = html.substring(0, 1);
@@ -156,7 +156,7 @@
                     a = a + '&' + $.param(this.core.s.vkPlayerParams);
                 }
 
-                video = '<iframe class="lg-video-object lg-vk ' + addClass + '" ' + videoTitle + ' width="560" height="315" src="//vk.com/video_ext.php?' + isVideo.vk[1] + a + '" frameborder="0" allowfullscreen></iframe>';
+                video = '<iframe class="lg-video-object lg-vk ' + addClass + '" ' + videoTitle + ' width="560" height="315" src="//vk.com/video_ext.php?' + isVideo.vk[1] + a + '" allowfullscreen></iframe>';
 
             }
 
